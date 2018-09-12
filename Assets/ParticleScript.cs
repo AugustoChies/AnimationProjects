@@ -75,11 +75,11 @@ public class ParticleScript : MonoBehaviour {
             {
                 if(direction.x > 0)
                 {
-                    this.transform.Rotate(rotationspeed * Time.deltaTime, 0, 0);
+                    this.transform.Rotate(0,0,-1 * rotationspeed * Time.deltaTime);
                 }
                 else
                 {
-                    this.transform.Rotate(-1 * rotationspeed * Time.deltaTime, 0, 0);
+                    this.transform.Rotate(0,0,rotationspeed * Time.deltaTime);
                 }
             }
 

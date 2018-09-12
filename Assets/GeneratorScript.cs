@@ -72,9 +72,18 @@ public class GeneratorScript : MonoBehaviour {
                 direction.y = Random.Range(-1f, 1f);
                 direction.z = Random.Range(-1f, 1f);
             }
-            if(trajectory == TrajectoryType.line)
+            if (trajectory == TrajectoryType.line)
+            {
                 direction = direction.normalized;
-            newparticle.GetComponent<ParticleScript>().direction = direction;
+                newparticle.GetComponent<ParticleScript>().direction = direction;
+            }
+            else
+            {
+                direction.x *= arcradius;
+                newparticle.GetComponent<ParticleScript>().direction = direction;
+                direction.x /= arcradius;
+            }
+            
             newparticle.GetComponent<ParticleScript>().lifetime = lifetime;
             newparticle.GetComponent<ParticleScript>().startingColor = startingColor;
             newparticle.GetComponent<ParticleScript>().endingColor = endingColor;

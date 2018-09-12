@@ -54,7 +54,9 @@ MonoBehaviour:
   emission: 0
   radius: 0
   trajectory: 0
-  deathCondition: 0
+  direction: {x: 0, y: 0, z: 0}
+  randomDirection: 0
+  arcradius: 0
   lifetime: 0
   startingColor: {r: 0, g: 0, b: 0, a: 0}
   endingColor: {r: 0, g: 0, b: 0, a: 0}
@@ -62,6 +64,8 @@ MonoBehaviour:
   endingScale: {x: 0, y: 0, z: 0}
   rotate: 0
   rotationspeed: 0
+  movespeed: 0
   particlePrefab: {fileID: 0}
   currentparticles: 0
   maxparticles: 0
+  emissionrate: 0
