@@ -61,9 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Enums.cs" />
-    <Compile Include="Assets\GeneratorScript.cs" />
-    <Compile Include="Assets\ParticleScript.cs" />
+    <Compile Include="Assets\GA\Enums.cs" />
+    <Compile Include="Assets\GA\GeneratorScript.cs" />
+    <Compile Include="Assets\GA\ParticleScript.cs" />
     <Compile Include="Assets\TrajectoryScriptsnAssets\BezierMotion.cs" />
     <Compile Include="Assets\TrajectoryScriptsnAssets\CircleMotion.cs" />
     <Compile Include="Assets\TrajectoryScriptsnAssets\PontMotion.cs" />
